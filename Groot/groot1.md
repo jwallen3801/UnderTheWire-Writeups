@@ -6,7 +6,7 @@ NOTE:
 – The password will be lowercase no matter how it appears on the screen."
 
 ## Solution
-The most straighforward way to obtain a hash in PowerShell is with the [Get-FileHash](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.5) cmdlet. By default, `Get-FileHash` uses the SHA256 algorigthm, but we can add the `-Algorithm` option to select a different one. In this case, we want the MD5 hash. On Windows systems, the hosts file can be found at `C:\Windows\System32\drivers\etc\hosts`. And thanks to PowerShell's object-oriented structure, we can use parentheses and dot notation to access the hash property of the resulting object so that only the hash is outputted to the console.
+The most straighforward way to obtain a hash in PowerShell is with the [Get-FileHash](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/get-filehash?view=powershell-7.5) cmdlet. By default, `Get-FileHash` uses the SHA256 algorithm, but we can add the `-Algorithm` option to select a different one. In this case, we want the MD5 hash. On Windows systems, the hosts file can be found at `C:\Windows\System32\drivers\etc\hosts`. And thanks to PowerShell's object-oriented structure, we can use parentheses and dot notation to access the hash property of the resulting object so that only the hash is outputted to the console.
 
 ![image](https://github.com/user-attachments/assets/96f4ad89-78f6-494e-b35f-60387a1fa5c8)
 
