@@ -1,4 +1,4 @@
-[Groot Level 7](https://underthewire.tech/groot-7)
+# [Groot Level 7](https://underthewire.tech/groot-7)
 ## Description
 "The password for groot8 is the name of the dll, as depicted in the registry, associated with the 'applockerfltr' service **PLUS** the name of the file on the desktop.
 
