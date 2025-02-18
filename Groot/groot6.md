@@ -15,10 +15,11 @@ The obvious place to begin when looking for a program that is set to start when 
 
 ![image](https://github.com/user-attachments/assets/5655d0cf-08c7-4bf9-9ef1-23d3857fd59d)
 
-We can then use dot and bracket notation to grab the relevant value before concatenating the output of the `ls` command to get the full value of the password as outlined in the challenge description.
+We can then use dot and bracket notation to grab the relevant value before concatenating the name of the file on the desktop with `Get-ChildItem` to get the full value of the password as outlined in the challenge description.
 
-![image](https://github.com/user-attachments/assets/3031cee4-1732-4450-a5bc-4d038a165c97)
+![image](https://github.com/user-attachments/assets/291ee243-1138-405c-ae55-15aaae099dd0)
 
-**Final command:** `(Get-Item -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Run).Property[-1] + $(ls)`
+
+**Final command:** `(Get-Item -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Run).Property[-1] + (gci .\_rules).Name`
 
 **Password for groot7:** star-lord_rules
