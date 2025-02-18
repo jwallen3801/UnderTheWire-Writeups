@@ -8,7 +8,7 @@ NOTE:
 ## Solution
 This level is very straightforward: there is a large text file on the desktop and we need to pull a single word out of it within the provided character index range. There are several possible solutions.
 
-1. Using the same `Subtring()` method from the solution for the previous level, we can simply plug in the character range given to us in the description. Recall that the `Substring()` method takes two parameters: the index of the character to start at and the length of the substring that you want.
+1. Using the same `Substring()` method from the solution for the previous level, we can simply plug in the character range given to us in the description. Recall that the `Substring()` method takes two parameters: the index of the character to start at and the length of the substring that you want.
 
 ![image](https://github.com/user-attachments/assets/5e28702c-355f-4658-81f9-25ead6e2728a)
 
