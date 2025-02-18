@@ -17,11 +17,11 @@ This results in a fairly large list of properties, but scrolling through the out
 
 ![image](https://github.com/user-attachments/assets/bb9e0331-2171-4e12-9003-3510061c7f8e)
 
-From here, it's only a matter of modifying our command to hone in on the specific property we want in our output, which we can do with dot notation. Finally, we can concatenate the output from the `ls` command to obtain the full, properly-formatted password as outlined in the challenge description.
+From here, it's only a matter of modifying our command to hone in on the specific property we want in our output, which we can do with dot notation. Finally, we can concatenate the name of the file on the desktop by using the [Get-ChildItem](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-childitem?view=powershell-7.5) cmdlet and obtain the full, properly-formatted password as outlined in the challenge description.
 
-![image](https://github.com/user-attachments/assets/3301df6b-8e77-4420-8a19-ed8ef8cbe3ca)
+![image](https://github.com/user-attachments/assets/1afdfdf7-198f-4394-9cb8-e4e8657c2e58)
 
 
-**Final command:** `(Get-ADUser -Identity "baby.groot" -Properties userWorkstations).userWorkstations + $(ls)`
+**Final command:** `(Get-ADUser -Identity "baby.groot" -Properties userWorkstations).userWorkstations + (gci .\_enterprise).Name`
 
 **Password for groot6:** wk11_enterprise
