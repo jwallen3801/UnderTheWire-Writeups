@@ -23,8 +23,8 @@ As I suspected, there are enough rules present (304) to make it both inconvenien
 
 This same firewall rule object contains the `Description` property mentioned in the challenge description, which we can access with dot notation and then concatenate with the name of the file on the desktop as we've done in previous levels.
 
-![image](https://github.com/user-attachments/assets/f3d8c448-c253-46f5-b5c1-b74707464972)
+![image](https://github.com/user-attachments/assets/666bbf06-1a89-4e4b-b484-01faa0414094)
 
-**Final command:** `(Get-NetFirewallRule | Where {$_.DisplayName -like "*mysql*"}).Description + $(ls)`
+**Final command:** `(Get-NetFirewallRule | Where {$_.DisplayName -like "*mysql*"}).Description + (gci).Name`
 
 **Password for groot9:** call_me_starlord
