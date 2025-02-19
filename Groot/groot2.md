@@ -2,7 +2,8 @@
 ## Description
 "The password for groot3 is the word that is made up from the letters in the range of 1,481,110 to 1,481,117 within the file on the desktop.
 
-NOTE:
+**NOTE:**
+
 – The password will be lowercase no matter how it appears on the screen."
 
 ## Solution
