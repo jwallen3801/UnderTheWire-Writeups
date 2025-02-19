@@ -9,7 +9,7 @@
 – The password will be lowercase no matter how it appears on the screen."
 
 ## Solution
-To get information about a user in Active Directory, we can use the [Get-ADUser](https://learn.microsoft.com/en-us/powershell/module/activedirectory/get-aduser?view=windowsserver2025-ps) cmdlet, along with the username of the relevant user as a parameter to the `-Identity` option. If we're not sure about the exact name of the property we're looking for, we can pass an asterisk to the `-Properties` option as a wildcard to return everything.
+To get information about a user in Active Directory, we can use the [Get-ADUser](https://learn.microsoft.com/en-us/powershell/module/activedirectory/get-aduser?view=windowsserver2025-ps) cmdlet, along with the username of the relevant user as an argument to the `-Identity` parameter. If we're not sure about the exact name of the property we're looking for, we can pass an asterisk to the `-Properties` parameter as a wildcard to return everything.
 
 ![image](https://github.com/user-attachments/assets/d5e01b59-03d3-4326-9ae9-406eb6d97100)
 
