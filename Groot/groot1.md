@@ -2,7 +2,8 @@
 ## Description
 "The password for groot2 is the last five alphanumeric characters of the MD5 hash of this system’s hosts file.
 
-NOTE:
+**NOTE:**
+
 – The password will be lowercase no matter how it appears on the screen."
 
 ## Solution
