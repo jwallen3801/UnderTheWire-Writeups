@@ -13,10 +13,10 @@ To search for information pertaining to a service within the registry, we can qu
 
 ![image](https://github.com/user-attachments/assets/416fa53a-4e35-4ecb-b51f-55b7d5187f9a)
 
-From here, we can use dot notation and follow an approach similar to the one we employed in level 4, using `-Split` to isolate the portion of the path that we want for the password and removing the `.dll` file extension with the `Substring()` method. Finally, we can once again concatenate the output of the `ls` command to append the name of the file on the desktop and complete the password.
+From here, we can use dot notation and follow an approach similar to the one we employed in level 4, using `-Split` to isolate the portion of the path that we want for the password and removing the `.dll` file extension with the `Substring()` method. Finally, we can once again concatenate the name of the file on the desktop and complete the password.
 
-![image](https://github.com/user-attachments/assets/113d449e-2a03-4f8b-8d96-442f0def8c3c)
+![image](https://github.com/user-attachments/assets/f0d5a590-834b-4ddd-8c5c-daf777aecce0)
 
-**Final command:** `(((Get-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\applockerfltr).DisplayName) -Split "\\")[-1].Substring(0,6) + $(ls)`
+**Final command:** `(((Get-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Services\applockerfltr).DisplayName) -Split "\\")[-1].Substring(0,6) + (gci).Name`
 
 **Password for groot8:** srpapi_home
