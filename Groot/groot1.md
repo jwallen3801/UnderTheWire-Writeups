@@ -10,7 +10,7 @@ The most straighforward way to obtain a hash in PowerShell is with the [Get-File
 
 ![image](https://github.com/user-attachments/assets/96f4ad89-78f6-494e-b35f-60387a1fa5c8)
 
-The above output is sufficient to complete the level, as we can simply copy the last five characters of the hash and move on. However, we can modify the command to return only the characters we're interested in by adding the `Substring()` method. All MD5 hashes are 32 characters long, so we can input 27 and 5 as the parameters to `Substring()` to tell it to start at character 27 and end at character 32. And because the challenge description mentions that the password needs to be lowercase, we can add the `ToLower()` method to our command for good measure to output the properly-formatted password to the console.
+The above output is sufficient to complete the level, as we can simply copy the last five characters of the hash and move on. However, we can modify the command to return only the characters we're interested in by adding the [Substring()](https://learn.microsoft.com/en-us/dotnet/api/system.string.substring?view=net-9.0) method. All MD5 hashes are 32 characters long, so we can input 27 and 5 as the parameters to `Substring()` to tell it to start at character 27 and end at character 32. And because the challenge description mentions that the password needs to be lowercase, we can add the [ToLower()](https://learn.microsoft.com/en-us/dotnet/api/system.string.tolower?view=net-9.0) method to our command for good measure to output the properly-formatted password to the console.
 
 ![image](https://github.com/user-attachments/assets/ea2a99e8-338a-476f-b0eb-6178df44755c)
 
