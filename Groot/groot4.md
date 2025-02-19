@@ -2,11 +2,12 @@
 ## Description
 "The password for groot5 is the name of the Drax subkey within the HKEY_CURRENT_USER (HKCU) registry hive.
 
-NOTE:
+**NOTE:**
+
 – The password will be lowercase no matter how it appears on the screen."
 
 ## Solution
-We need to find a subkey in the [registry](https://en.wikipedia.org/wiki/Windows_Registry), but from the description we have no idea where it is aside from the fact that it's somehwere within the `HKEY_CURRENT_USER` hive. However, we are given the name of the key, which makes searching for it much easier. We can use the `Get-ChildItem` cmdlet with the `-Recurse` option to recursively list every item in the `HKCU:\` path. The `-ErrorAction SilentlyContinue` option will prevent PowerShell from printing any ugly error messages to the console alongside our desired output, which tends to happen when recursively searching through a large directory space with normal user privileges. Finally, we can pipe the output to `Select-String` using the name of the subkey we already know from the challenge description.
+We need to find a subkey in the [registry](https://en.wikipedia.org/wiki/Windows_Registry), but from the description we have no idea where it is aside from the fact that it's somehwere within the `HKEY_CURRENT_USER` hive. However, we are given the name of the key, which makes searching for it much easier. We can use the `Get-ChildItem` cmdlet with the `-Recurse` option to recursively list every item in the `HKCU:\` path. The `-ErrorAction SilentlyContinue` option will prevent PowerShell from printing any ugly error messages to the console alongside our desired output, which tends to happen when recursively searching through a large directory space with normal user privileges. Finally, we can pipe the output to `Select-String` using the name of the key we already know from the challenge description.
 
 ![image](https://github.com/user-attachments/assets/c75d7ff6-5ffa-4ef9-b7c2-50023d3642f0)
 
