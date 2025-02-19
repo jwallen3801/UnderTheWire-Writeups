@@ -19,4 +19,4 @@ From here, we can follow a similar process seen in previous levels of using dot 
 
 **Final command:** `(((Get-Acl '.\Nine Realms').Owner) -split "\\")[-1].ToLower()`
 
-**Password to groot13:** airwolf
+**Password for groot13:** airwolf
