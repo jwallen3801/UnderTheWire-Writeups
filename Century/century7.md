@@ -23,6 +23,6 @@ There is only one result, so this must be the file we're looking for. We can pip
 
 ![image](https://github.com/user-attachments/assets/180dc2a0-881a-499f-b33a-a9ced185cd33)
 
-**Final command:** `Get-ChildItem -Force -Recurse -ErrorAction SilentlyContinue | Where {$_.Name -like "*readme*"} | Get-Content`
+**Final command:** `Get-ChildItem -Recurse -Force -ErrorAction SilentlyContinue | Where {$_.Name -like "*readme*"} | Get-Content`
 
 **Password for century8:** 7points
