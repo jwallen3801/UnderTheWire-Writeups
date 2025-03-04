@@ -1,4 +1,4 @@
-# UnderTheWire-Writeups
+# Under The Wire Writeups
 This repository contains my walkthroughs for completing the [PowerShell wargames from Under the Wire](https://underthewire.tech/wargames). The target audience for these writeups is other IT and cybersecurity enthusiasts who want to learn some cool PowerShell tricks along with me. While I attempt to be thorough and link to relevant documentation where applicable, some basic knowledge about using the command line is either assumed or passed over without explanation, such as using the pipe character `|` to chain commands together or using [aliases for cmdlets in PowerShell](https://learn.microsoft.com/es-es/powershell/module/microsoft.powershell.core/about/about_aliases?view=powershell-7.5) (e.g. `ls` or `gci` instead of `Get-ChildItem`). Any such explanations that aren't explicitly included are easily discoverable with a search engine.
 
 To make these solutions a little more interesting for both myself and you, I've placed the following constraints on myself for what I will consider to be an adequate solution:
